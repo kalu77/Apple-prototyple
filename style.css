@@ -8,32 +8,32 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(pink, rgb(243, 125, 145), black);
+  background: linear-gradient(pink, rgb(255, 255, 255), black);
 }
 header {
   position: fixed;
   width: 100%;
   height: fit-content;
   z-index: 10000000;
-  opacity: 80%;
+  opacity: 300%;
 }
 nav {
   display: flex !important;
   justify-content: space-between;
   padding: 0 10px 0 10px;
-  background-color: rgb(255, 124, 124);
+  background-color: rgb(23, 1, 41);
 }
 nav a {
-  text-shadow: 2px 3px 4px whitesmoke;
-  color: grey;
+  text-shadow: 2px 3px 4px rgb(121, 121, 121);
+  color: rgb(255, 255, 255);
 }
 #homemenu {
   margin: 2px 16px 4px 3px;
-  font-family: "MuseoModerno", cursive;
+  font-family: "MuseoModerno", Arial;
 }
 
 .fuente {
-  font-family: "MuseoModerno", cursive;
+  font-family: "MuseoModerno", Arial;
 }
 
 .formcontainer {
@@ -51,17 +51,17 @@ nav a {
 }
 
 .col1 {
-  background-image: url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/06/13/15920537620512.jpg);
+  background-image: url(https://previews.123rf.com/images/maxxyustas/maxxyustas1510/maxxyustas151000027/47274543-concepto-de-la-educaci%C3%B3n-libros-y-libros-de-texto-sobre-la-estanter%C3%ADa-3d.jpg);
   background-size: cover;
   transform: rotate(180deg);
 }
 .col3 {
-  background-image: url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/06/13/15920537620512.jpg);
+  background-image: url(https://previews.123rf.com/images/maxxyustas/maxxyustas1510/maxxyustas151000027/47274543-concepto-de-la-educaci%C3%B3n-libros-y-libros-de-texto-sobre-la-estanter%C3%ADa-3d.jpg);
   background-size: cover;
 }
 
 .jumbotron {
-  background-image: url(https://images.unsplash.com/photo-1516642898673-edd1ced08e87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-image: url();
   margin-bottom: 0px !important;
   text-align: center;
 }
@@ -79,41 +79,22 @@ nav a {
 
 .logosjt {
   font-size: 42px;
-  color: hotpink;
-  text-shadow: 2px 2px 2px blue;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
   /* margin-right: 22px; */
 }
 .logosjt:hover {
   text-decoration: none;
 }
 
-/* BANNER */
-#banner {
-  padding-top: 20px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* Seccion novedades */
+#titulo {
+  background-image: url();
+  margin-bottom: 0px !important;
   text-align: center;
-  background-image: url(https://brand-inteligente.com/wp-content/uploads/2020/06/branding-logo-marca-apple-brand-inteligente.png);
-  background-size: cover;
+  color:rgb(0, 0, 0)
 }
 
-#imgbanner {
-  position: absolute;
-  z-index: -1;
-}
-
-#subtextbanner {
-  z-index: 1;
-  font-family: "MuseoModerno", cursive;
-  font-size: 2rem;
-  text-shadow: 0 1px 0 #d42c2c, 0 2px 0 #884646, 0 3px 0 #a85757,
-    0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1),
-    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
-    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-}
 
 /* PRODUCTS */
 
@@ -122,7 +103,7 @@ nav a {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: rgb(80, 2, 2);
+  background: rgb(121, 28, 28);
 }
 #card2 {
   margin-left: 1rem;
@@ -134,49 +115,18 @@ nav a {
 
 .containerProd .card {
   position: relative;
-  width: 320px;
+  width: 350px;
   height: 450px;
-  background: rgb(138, 105, 105);
-  border-radius: 20px;
+  background: rgb(255, 202, 202);
+  border-radius: 80px;
   overflow: hidden;
 }
 
-.containerProd .card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(255, 32, 125);
-  clip-path: circle(150px at 80% 20%);
-  transition: 0.5s ease-in-out;
-}
 
-.containerProd #card3::before {
-  background: gray;
-}
-
-.containerProd #card2::before {
-  background: orange;
-}
-
-.containerProd .card:hover:before {
-  clip-path: circle(700px at 80% -20%);
-}
-
-.containerProd .card::after {
-  content: "headp";
-  position: absolute;
-  top: 100%;
-  left: -10%;
-  font-family: "MuseoModerno", cursive;
-  font-size: 8em;
-  color: rgb(107, 92, 65);
-}
+/* Posicion de imagen en las card  */
 
 .containerProd .card .imgBx img {
-  height: 300px;
+  height: 250px;
   /*  */
   position: absolute;
   top: 80%;
@@ -184,16 +134,11 @@ nav a {
   transform: translate(-50%, -50%) rotate(-2deg);
 }
 
-.containerProd #card3 .imgBx img {
-  height: 360px;
-
-  top: 90%;
-  /*  */
-}
+/* Movimiento de imagen en las card  */
 
 .containerProd .card .imgBx {
   position: absolute;
-  top: 8%;
+  top: 10%;
   transform: translateY(50%);
   z-index: 10000;
   width: 100%;
@@ -206,6 +151,8 @@ nav a {
   transform: translateY(0%);
 }
 
+/* diseño de texto dentro de las card  */
+
 .containerProd .card .contentBx {
   position: absolute;
   bottom: 0;
@@ -217,15 +164,15 @@ nav a {
 }
 
 .containerProd .card:hover .contentBx {
-  height: 130px;
+  height: 150px;
 }
 
 .containerProd .card .contentBx h2 {
   position: relative;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(73, 73, 73)31); 
+  font-family: "arial";
 }
 
 .containerProd .card .contentBx .color {
@@ -238,85 +185,15 @@ nav a {
   visibility: hidden;
 }
 
-.containerProd .card:hover .contentBx .color {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.5s;
-}
-
-.containerProd .card .contentBx .color h3 {
-  color: #fff;
-  font-weight: 300;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-right: 10px;
-  font-family: "Poppins", sans-serif;
-  /* font-family: "Source Sans Pro", sans-serif; */
-}
-
-.containerProd .card .contentBx .color span {
-  width: 20px;
-  height: 20px;
-  background: #ff0;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.containerProd .card .contentBx .color span:nth-child(2) {
-  background: orangered;
-  border: 2px solid black;
-}
-
-.containerProd .card .contentBx .color span:nth-child(3) {
-  background: blue;
-  border: 2px solid black;
-}
-
-.containerProd .card .contentBx .color span:nth-child(4) {
-  background: green;
-  border: 2px solid black;
-}
-
-.containerProd #card2 .contentBx .color span:nth-child(2) {
-  background: hotpink;
-  border: 2px solid black;
-}
-
-.containerProd #card2 .contentBx .color span:nth-child(3) {
-  background: green;
-  border: 2px solid black;
-}
-
-.containerProd #card2 .contentBx .color span:nth-child(4) {
-  background: lightblue;
-  border: 2px solid black;
-}
-
-.containerProd #card3 .contentBx .color span:nth-child(2) {
-  background: red;
-  border: 2px solid black;
-}
-
-.containerProd #card3 .contentBx .color span:nth-child(3) {
-  background: green;
-  border: 2px solid black;
-}
-.containerProd #card3 .contentBx .color span:nth-child(4) {
-  background: brown;
-  border: 2px solid black;
-}
-
 .containerProd .card .contentBx a {
   display: inline-block;
   padding: 10px 20px;
-  background: #fff;
+  background: rgb(0, 0, 0)71, 10, 10);
   border-radius: 14px;
   margin-top: 5px;
   text-decoration: none;
   font-weight: 600;
-  color: #111;
+  color: white;
   opacity: 0;
   transform: translateY(40px);
   transition: 0.5s;
@@ -328,18 +205,232 @@ nav a {
   transition-delay: 0.75s;
 }
 
-/* FOOTER */
-.logos {
-  font-size: 22px;
-  color: hotpink;
-  text-shadow: 2px 2px 2px black;
-  margin-right: 22px;
+/* seccion 2 */
+
+
+
+
+#recomendados {
+  background-image: url();
+  margin-bottom: 0px !important;
+  text-align: center;
+  color:rgb(0, 0, 0)
 }
 
-.textft {
-  font-size: 22px;
-  color: hotpink;
-  text-shadow: 2px 2px 2px black;
+#libros_recomendados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(102, 114, 155);
+}
+
+.containerLibr {
+  position: relative;
+}
+
+.containerLibr .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: rgb(255, 202, 202);
+  border-radius: 80px;
+  overflow: hidden;
+}
+
+
+/* Posicion de imagen en las card  */
+
+.containerLibr .card .imgBx img {
+  height: 250px;
+  /*  */
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-2deg);
+}
+
+/* Movimiento de imagen en las card  */
+
+.containerLibr .card .imgBx {
+  position: absolute;
+  top: 10%;
+  transform: translateY(50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.containerLibr .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+/* diseño de texto dentro de las card  */
+
+.containerLibr .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.containerLibr .card:hover .contentBx {
+  height: 130px;
+}
+
+.containerLibr .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(73, 73, 73)31); 
+  font-family: "arial";
+}
+
+.containerLibr .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.containerLibr .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(0, 0, 0)71, 10, 10);
+  border-radius: 14px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+
+.containerLibr .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+
+/* seccion 3 */
+
+#leidos {
+  margin-bottom: 0px !important;
+  text-align: center;
+  color:rgb(0, 0, 0)
+}
+
+#mas_leidos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(121, 28, 28);
+}
+
+.containerLeidos {
+  position: relative;
+}
+
+.containerLeidos .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: rgb(221, 133, 133);
+  border-radius: 80px;
+  overflow: hidden;
+}
+
+
+/* Posicion de imagen en las card  */
+
+.containerLeidos .card .imgBx img {
+  height: 250px;
+  /*  */
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-2deg);
+}
+
+/* Movimiento de imagen en las card  */
+
+.containerLeidos .card .imgBx {
+  position: absolute;
+  top: 10%;
+  transform: translateY(50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.containerLeidos .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+/* diseño de texto dentro de las card  */
+
+.containerLeidos .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.containerLeidos .card:hover .contentBx {
+  height: 130px;
+}
+
+.containerLeidos .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(73, 73, 73)31); 
+  font-family: "arial";
+}
+
+.containerLeidos .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.containerLeidos .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(0, 0, 0)71, 10, 10);
+  border-radius: 14px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+
+.containerLeidos .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
 }
 
 /* RESPONSIVE */

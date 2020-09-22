@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Apple</title>
+    <title>Libreria</title>
     <link rel="stylesheet" href="style.css" />
     <!-- CSS only -->
     <link
@@ -27,46 +27,47 @@
       <header>
         <nav>
           <a href="">
-            <div id="homemenu"><h2>Apple</h2></div>
-          </a>
+            <div id="homemenu"><h2>Libreria Genius</h2></div>
+          </a>  
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link" href="#aboutus">About us</a>
-            <a class="nav-item nav-link" href="#products">Products</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" class="nav-item nav-link" href="#">Genero</a>        
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="">Ciencia</a>
+                <a class="dropdown-item" href="">Romanticos</a>
+                <a class="dropdown-item" href="">Historia</a>
+                <a class="dropdown-item" href="">Biografias</a>
+                <a class="dropdown-item" href="">Cultura</a>
+              </div>
+            </li>
+            <a class="nav-item nav-link" href="#products">Novedades</a>
+            <a class="nav-item nav-link" href="#mas_leidos">Mas leidos</a>
+            <a class="nav-item nav-link" href="#libros_recomendados">Recomendados</a>
+            <a class="nav-item nav-link" href="#contact">Contacto</a>
           </div>
         </nav>
       </header>
-
-      <!-- BANNER -->
-      <section id="banner">
-        <img id="imgbanner" src="" alt="" />
-        <h1 id="textbanner"></h1>
-        <h4 id="subtextbanner">Thanks for visiting us</h4>
-      </section>
 
       <!-- JUMBOTRON -->
       <section id="jumbotron">
         <div class="jumbotron" id="aboutus">
           <h1 class="display-4">
-            welcome to
-            <span class="fuente">Apple</span>
+            Bienvenido a 
+            <span class="fuente">Genius</span>
           </h1>
 
           <p class="lead">
-            Everything you need from 
-            <span class="fuente">apple</span> is available
+            Todos los libros que necesitas estan disponibles en
+            <span class="fuente">Genius</span> 
           </p>
           <hr class="my-4" />
-          <p>
-            everythings for our clients here
-            <span class="fuente">AppleStore</span>.
-          </p>
+          
           <a
-            class="btn btn-outline-danger btn-lg"
+            class="btn btn-outline-info btn-lg"
             id="buttonprod"
             href="#products"
             role="button"
-            >See our products</a
+            >Todos los libros</a
           >
 
           <div class="logoswrap">
@@ -82,33 +83,45 @@
           </div>
         </div>
       </section>
+
+      <section id="titulo">
+          <h1 class="display-4">
+            Novedades</h1>
+        </section>
       <!-- PRODUCTS -->
+
+      <!-- SECCION UNO -->
+
       <section id="products">
+
         <!-- prod1 -->
+        
         <div class="containerProd">
+        
           <div class="card">
             <div class="imgBx">
-              <img src="./img/H1.png" alt="" id="headp1" />
+              <img src="./img/nov.png" alt="" id="headp1" />
             </div>
             <div class="contentBx">
-              <h2>Iphone 11</h2>
+              <h2>1984</h2>
               <div class="color">
-                <h3></h3>
+               
                 
               </div>
               <a href="#">Buy Now</a>
             </div>
           </div>
         </div>
+     
 
         <!-- prod2 -->
         <div class="containerProd">
           <div class="card" id="card2">
             <div class="imgBx">
-              <img src="./img/H4.png" alt="" id="headp2" />
+              <img src="./img/novdos.png" alt="" id="headp2" />
             </div>
             <div class="contentBx">
-              <h2>iphone 11 PRO</h2>
+              <h2>Cien años de soledad</h2>
               <div class="color">
                 <h3></h3>
                 
@@ -122,27 +135,164 @@
         <div class="containerProd">
           <div class="card" id="card3">
             <div class="imgBx">
-              <img src="./img/H3.png" alt="" id="headp3" />
+              <img src="./img/novtres.png" alt="" id="headp3" />
             </div>
             <div class="contentBx">
-              <h2>iphone 10</h2>
+              <h2>Jaque al psicoanalista</h2>
               <div class="color">
-                <h3></h3>
+                
                
               </div>
               <a href="#">Buy Now</a>
             </div>
           </div>
         </div>
+        
+      </section>
+      
+      <hr>
+
+      <section id="recomendados">
+        <h1 class="display-4">
+          Recomendados</h1>
       </section>
 
+       <!-- SECCION 2 -->
+
+       <section id="libros_recomendados">
+
+        <!-- prod1 -->
+        
+        <div class="containerLibr">
+        
+          <div class="card">
+            <div class="imgBx">
+              <img src="./img/recom.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Robinson crusoe</h2>
+              <div class="color">
+               
+                
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+     
+
+        <!-- prod2 -->
+        <div class="containerProd">
+          <div class="card" id="card2">
+            <div class="imgBx">
+              <img src="./img/recomdos.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Ana Frank</h2>
+              <div class="color">
+                <h3></h3>
+                
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- prod3 -->
+        <div class="containerProd">
+          <div class="card" id="card3">
+            <div class="imgBx">
+              <img src="./img/recomtres.png" alt="" />
+            </div>
+            <div class="contentBx">
+              <h2>Orgullo y prejuicio
+              </h2>
+              <div class="color">
+                
+               
+              </div>
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <hr>
+
+
+      <section id="leidos">
+        <h1 class="display-4">
+          Mas leidos</h1>
+      </section>
+
+        <!-- SECCION 3 -->
+
+        <section id="mas_leidos">
+
+          <!-- prod1 -->
+          
+          <div class="containerLeidos">
+          
+            <div class="card">
+              <div class="imgBx">
+                <img src="./img/H1.png" alt="" />
+              </div>
+              <div class="contentBx">
+                <h2>El alquimista</h2>
+                <div class="color">
+                 
+                  
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+       
+  
+          <!-- prod2 -->
+          <div class="containerProd">
+            <div class="card" id="card2">
+              <div class="imgBx">
+                <img src="./img/H4.png" alt="" />
+              </div>
+              <div class="contentBx">
+                <h2>Asi habló saratustra</h2>
+                <div class="color">
+                  <h3></h3>
+                  
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- prod3 -->
+          <div class="containerProd">
+            <div class="card" id="card3">
+              <div class="imgBx">
+                <img src="./img/H3.png" alt="" />
+              </div>
+              <div class="contentBx">
+                <h2>El lobo estepario</h2>
+                <div class="color">
+                  
+                 
+                </div>
+                <a href="#">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      
       <!-- FORM -->
       <section id="form">
         <div class="formcontainer" id="contact">
           <div class="col1"></div>
           <div class="col2">
             <form>
-              <h4 class="fuente">Join to apple</h4>
+              <h4 class="fuente">Login</h4>
               <div class="form-row fuente">
                 <div class="form-group col-md-6">
                   <label for="inputName4">name</label>
